@@ -1,0 +1,10 @@
+
+            String firstName;
+
+            String lastName;
+
+            firstName = Textbox_First_Name.Text;
+
+            lastName = textbox_last_name.Text;
+
+            LabelMyMessage.Content = "Hello " + firstName + " " + lastName + ", good to see you! ";
