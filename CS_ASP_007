@@ -1,0 +1,72 @@
+ public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double number1=0, number2=0, total=0;
+
+            number1 = Convert.ToDouble(Textbox1.Text);
+
+            number2 = Convert.ToDouble(Textbox_2.Text);
+
+            total = number1 + number2;
+
+            label.Content = total;
+
+
+        }
+
+        private void Multiply_Click(object sender, RoutedEventArgs e)
+        {
+            double number1 = 0, number2 = 0, total = 0;
+            
+            number1 = Convert.ToDouble(Textbox1.Text);
+
+            number2 = Convert.ToDouble(Textbox_2.Text);
+
+            total = number1 * number2;
+
+            label.Content = total;
+
+
+        }
+
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //subtraction
+
+            double number1 = 0, number2 = 0, total = 0;
+
+            number1 = Convert.ToDouble(Textbox1.Text);
+
+            number2 = Convert.ToDouble(Textbox_2.Text);
+
+            total = number1 - number2;
+            
+            label.Content = total;
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //division
+
+            double number1 = 0, number2 = 0, total = 0;
+            
+            number1 = Convert.ToDouble(Textbox1.Text);
+
+            number2 = Convert.ToDouble(Textbox_2.Text);
+
+            total = number1 / number2;
+
+            label.Content = total;
+
+
+        }
+    }
+}
