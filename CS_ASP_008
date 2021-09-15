@@ -1,1 +1,90 @@
 
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        { //Multiply
+
+            double numOne = 0, numTwo = 0, sum = 0;
+
+            numOne = Convert.ToDouble(TextBox1.Text);
+
+            numTwo = Convert.ToDouble(Textbox_2.Text);
+
+            sum = numOne * numTwo;
+
+            LabelSum.Content = sum;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {//sub
+            double numOne = 0, numTwo = 0, sum = 0;
+
+            numOne = Convert.ToDouble(TextBox1.Text);
+
+            numTwo = Convert.ToDouble(Textbox_2.Text);
+
+            sum = numOne - numTwo;
+
+            LabelSum.Content = sum;
+        }
+
+        private void ButtonModulus_Click(object sender, RoutedEventArgs e)
+        {//Mod
+
+            double numOne = 0, numTwo = 0, sum = 0;
+
+            numOne = Convert.ToDouble(TextBox1.Text);
+
+            numTwo = Convert.ToDouble(Textbox_2.Text);
+
+            sum = numOne % numTwo;
+            
+            LabelSum.Content = sum;
+
+        }
+
+        private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+        {//Add
+
+            double numOne = 0, numTwo = 0, sum = 0;
+
+            numOne = Convert.ToDouble(TextBox1.Text);
+
+            numTwo = Convert.ToDouble(Textbox_2.Text);
+
+            sum = numOne + numTwo;
+
+            LabelSum.Content = sum;
+
+        }
+
+        private void ButtonClear_Click(object sender, RoutedEventArgs e)
+        {//Clear
+
+            TextBox1.Text = "";
+
+            Textbox_2.Text = "";
+
+            LabelSum.Content = "";
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        { //Div
+            double numOne = 0, numTwo = 0, sum = 0;
+
+            numOne = Convert.ToDouble(TextBox1.Text);
+
+            numTwo = Convert.ToDouble(Textbox_2.Text);
+
+            sum = numOne / numTwo;
+
+            LabelSum.Content = sum;
+
+
+        }
+    }
+}
