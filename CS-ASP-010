@@ -1,0 +1,38 @@
+public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        { /*
+            int i
+
+            i = "125";
+            */
+            /*
+            long j = 2000000000000000;
+            
+            int i;
+            
+            i = (int)j;
+
+            Label.Content = i;
+            */
+            /*
+            double j = 2.55;
+            int i = (int)j;
+
+            Label.Content = i;
+            */
+
+            String userInput = textbox_input.Text;
+
+            double NumOne = double.Parse(userInput);
+
+            double anwser = NumOne + 64;
+
+            Label.Content = anwser;
+
+
