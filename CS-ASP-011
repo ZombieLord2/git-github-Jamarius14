@@ -1,0 +1,35 @@
+ public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            Label.Content = " ";
+            /*
+            if (textBox1.Text == textBox2.Text )
+            {
+                Label.Content = " ";
+                
+                Label.Content = "These are Equal!!!";
+
+
+            }
+            else
+            {
+                Label.Content = "These are not Equal!!!";
+            }
+            */
+
+            if (checkboxHungry.IsChecked == true)
+            {
+                Label.Content = "You need a Big Mac!";
+
+            }
+            else
+            {
+                Label.Content = "Well I still like you!";
+            }
