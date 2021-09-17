@@ -1,0 +1,36 @@
+public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Label.Content = "You Must Pick One!";
+
+            if (pencilCheckBox.IsChecked == true)
+            {
+                Label.Content = "Pencil, Very reliable!";
+
+                ImageBox.Source = ""
+            }
+
+            if (penCheckBox.IsChecked == true)
+            {
+                Label.Content = "Pen, Nice Choice!";
+            }
+
+            if (phoneCheckBox.IsChecked == true)
+            {
+                Label.Content = "Phone, you must be from the future!";
+
+                if (padCheckBox.IsChecked == true)
+                {
+                    Label.Content = "Pad, welcome too 2020!";
+                }
+            }
+
+        }
+    }
+}
