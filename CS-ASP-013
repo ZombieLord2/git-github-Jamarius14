@@ -1,0 +1,33 @@
+  public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        
+        
+        
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //resultLabel.Content = (textbox1.Text == textBox2.Text) ? "yes" : "no";
+
+            //resultLabel.Content = (checkBox.IsChecked == true) ? "Hey kid get off my lawn" : "I need a new skateboard";
+
+            //resultLabel.Content = (textbox1.Text != textBox2.Text) ? "yes" : "No";
+
+            //int numOne = Convert.ToInt32(textbox1.Text);
+            //int numTwo = Convert.ToInt32(textBox2.Text);
+
+            //resultLabel.Content = (numOne > numTwo) ? "yes" : "No";
+
+            if ((textbox1.Text == "Mr")&& (textBox2.Text == "Wilson"))
+            {
+                resultLabel.Content = "Good Morning";
+            }
+            else
+            {
+                resultLabel.Content = "Who are you?";
+            }
+        
