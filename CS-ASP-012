@@ -1,4 +1,4 @@
-public partial class MainWindow : Window
+ public partial class MainWindow : Window
     {
         public MainWindow()
         {
@@ -7,30 +7,55 @@ public partial class MainWindow : Window
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Label.Content = "You Must Pick One!";
-
-            if (pencilCheckBox.IsChecked == true)
+            label.Content = "You Must Pick One";
+            //pencil
+            if (PencilButton.IsChecked ==true)
             {
-                Label.Content = "Pencil, Very reliable!";
+                label.Content = "Pencil,Very Reliable!";
 
-                ImageBox.Source = ""
+                pencilImage.Opacity = 100;
             }
-
-            if (penCheckBox.IsChecked == true)
+            else
             {
-                Label.Content = "Pen, Nice Choice!";
+                pencilImage.Opacity = 0;
             }
-
-            if (phoneCheckBox.IsChecked == true)
+           //pen
+            if (PenButton.IsChecked == true)
             {
-                Label.Content = "Phone, you must be from the future!";
+                label.Content = "Pen, nice choice!";
 
-                if (padCheckBox.IsChecked == true)
-                {
-                    Label.Content = "Pad, welcome too 2020!";
-                }
+                penImage.Opacity = 100;
             }
+            else
+            {
+                penImage.Opacity = 0;
+            }
+            
+           //phone
+            if (PhoneButton.IsChecked == true)
+            {
+                label.Content = "Phone, welcome to 2020!";
 
+                phoneImage.Opacity = 100;
+            }
+            else
+            {
+                phoneImage.Opacity = 0;
+            }
+            
+            
+            //pad
+            if (PadButton.IsChecked == true)
+            {
+                label.Content = "Pad, you must be from the future!";
+
+                padImage.Opacity = 100;
+            }
+            else
+            {
+                padImage.Opacity = 0;
+            }
+        
         }
     }
 }
